@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anuario 2026 · PROM 1101 · I.E. Eugenio Ferro Falla</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       EL LIBRO: contenedor principal. Todo el anuario vive aquí.
+       ============================================================ -->
+  <main class="libro">
+
+    <!-- PORTADA -->
+    <header class="portada">
+      <!-- Foto grupal de portada: se mueve más lento que la página (parallax) -->
+      <img class="portada-foto" data-velocidad="0.2" src="img/grado-grupal.jpg" alt="Foto grupal de la promoción 1101">
+      <p class="portada-colegio">I.E. EUGENIO FERRO FALLA</p>
+      <p class="portada-lema">PROM 1101 · Ciencia y Virtud</p>
+    </header>
+
+    <!-- BARRA DE HERRAMIENTAS (funciona con script.js) -->
+    <nav class="barra" aria-label="Herramientas del anuario">
+      <input type="search" id="buscar" placeholder="Buscar y ir a un estudiante" aria-label="Buscar estudiante">
+      <span id="contador" aria-live="polite"></span>
+    </nav>
+
+    <!-- ============================================================
+         SECCIÓN: ESTUDIANTES
+         Una <section> agrupa contenido del mismo tema.
+         Cada estudiante es un <article>: tiene sentido por sí solo.
+         Para añadir un estudiante, copia un bloque <article> completo.
+         ============================================================ -->
+    <section class="seccion" id="estudiantes">
+      <h2 class="seccion-titulo">Nuestros graduandos</h2>
+
+      <!-- 30 páginas de estudiante, en el orden del índice (apellidos A–Z).
+           Cada <article> es una página. La foto va en img/estudiante-1.jpg ... img/estudiante-30.jpg -->
+      <article class="estudiante-pagina" id="estudiante-01">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-1.jpg" alt="Foto de Alarcon Cortes Laura Liney">
+          <img class="estudiante-firma" src="img/firma-1.png" alt="Firma digital de Alarcon Cortes Laura Liney">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Alarcon Cortes Laura Liney</h1>
+          <p class="estudiante-frase">“El que persevera alcanza”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Enfermera</li>
+            <li>Doctora</li>
+            <li>Ingeniera</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco a Dios y a mi familia que me acompañaron en esta etapa, por su apoyo, consejos y paciencia.</li>
+            <li><strong>Recuerdo favorito:</strong> Haber encontrado una persona realmente leal en mi vida</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-02">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-2.jpg" alt="Foto de Amaya Losada Narly Lizeth">
+          <img class="estudiante-firma" src="img/firma-2.png" alt="Firma digital de Amaya Losada Narly Lizeth">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Amaya Losada Narly Lizeth</h1>
+          <p class="estudiante-frase">“No entendí nada”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Seguir estudiando</li>
+            <li>Terminar hasta sacar el tecnólogo</li>
+            <li>Trabajar para conseguir mis cosas</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> A mis padres y a todos los docentes que me acompañaron</li>
+            <li><strong>Recuerdo favorito:</strong> Mi recuerdo favorito es conocer a amistades que me ayudaron en el peor momento y me sacaban una sonrisa</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-03">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-3.jpg" alt="Foto de Barrera Mosquera Nycot Danihela">
+          <img class="estudiante-firma" src="img/firma-3.png" alt="Firma digital de Barrera Mosquera Nycot Danihela">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Barrera Mosquera Nycot Danihela</h1>
+          <p class="estudiante-frase">“Su Madreeee”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Estudiar en el Sena</li>
+            <li>Hacer orgullosa a mi madre</li>
+            <li>Infante de Marina</li>
+            <li>Chef</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Le doy gracias a mi madre por darme su apoyo incondicional en mis estudios y por siempre confiar en mí</li>
+            <li><strong>Recuerdo favorito:</strong> Mi recuerdo favorito fue cuando iniciamos nuestro grupito de 4 en séptimo con unas amigas</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-04">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-4.jpg" alt="Foto de Bastidas Lombrana Andres Felipe">
+          <img class="estudiante-firma" src="img/firma-4.png" alt="Firma digital de Bastidas Lombrana Andres Felipe">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Bastidas Lombrana Andres Felipe</h1>
+          <p class="estudiante-frase">“Relax que yo remonto”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Odontólogo</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco a mis padres por todo el esfuerzo que hicieron todos estos años para que yo pudiera llegar hasta acá MI GRADO DE BACHILLER</li>
+            <li><strong>Recuerdo favorito:</strong> Mi noviazgo</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-05">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-5.jpg" alt="Foto de Benitez Castro Estiven Julian">
+          <img class="estudiante-firma" src="img/firma-5.png" alt="Firma digital de Benitez Castro Estiven Julian">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Benitez Castro Estiven Julian</h1>
+          <p class="estudiante-frase">“Mire a este negro”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Mi mayor aspiración es convertirme en doctor y alcanzar todas mis metas profesionales, preparándome con dedicación para proteger la salud de las personas y cumplir con éxito cada objetivo que me proponga en el futuro.</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco profundamente a mis compañeros, familiares y profesores por haberme acompañado y guiado en esta etapa. Su apoyo y compañía fueron fundamentales durante todo mi proceso educativo en la secundaria.</li>
+            <li><strong>Recuerdo favorito:</strong> Sin duda, mi recuerdo favorito fue el día en que me organizaron una fiesta de cumpleaños sorpresa. Ver reunidos a mis 4 mejores amigos para celebrar conmigo es un momento que guardo con muchísimo cariño en el corazón.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-06">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-6.jpg" alt="Foto de Bocanegra Giraldo Nikoll Lizeth">
+          <img class="estudiante-firma" src="img/firma-6.png" alt="Firma digital de Bocanegra Giraldo Nikoll Lizeth">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Bocanegra Giraldo Nikoll Lizeth</h1>
+          <p class="estudiante-frase">“En nombre de Dios, todo lo lograré”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Estudiar la carrera de mis sueños</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Gracias a mi familia por el apoyo</li>
+            <li><strong>Recuerdo favorito:</strong> Todos los recuerdos de octavo, pero especialmente cuando dañamos un candado para no tener clases con una profesora</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-07">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-7.jpg" alt="Foto de Caviedes Perdomo Danna Valentina">
+          <img class="estudiante-firma" src="img/firma-7.png" alt="Firma digital de Caviedes Perdomo Danna Valentina">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Caviedes Perdomo Danna Valentina</h1>
+          <p class="estudiante-frase">“Ay Dios mío”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Estudiar psicología, o seguir con el técnico.</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Les doy las gracias a mis padres por su apoyo emocional, económico, a mis maestros por su paciencia, y todas las enseñanzas que me han dejado.</li>
+            <li><strong>Recuerdo favorito:</strong> Mi recuerdo favorito es cuando unos compañeros estaban jugando con una pelota de papel, y accidentalmente le pegaron a una profesora casi dañándole las gafas.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-08">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-8.jpg" alt="Foto de Cuellar Caviedes Zaidy Liseth">
+          <img class="estudiante-firma" src="img/firma-8.png" alt="Firma digital de Cuellar Caviedes Zaidy Liseth">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Cuellar Caviedes Zaidy Liseth</h1>
+          <p class="estudiante-frase">“Ay no que pena”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Estudiar en el SENA</li>
+            <li>Hacer el orgullosa de mi familia</li>
+            <li>Cumplir mi sueño sin rendirme</li>
+            <li>Crecer como persona y aprender de mis errores</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco a mis padres por su amor incondicional, por apoyarme en cada momento y por hacer tantos esfuerzos para darme lo mejor. Gracias por sus consejos, por confiar en mí y por motivarme a seguir adelante, incluso cuando las cosas se ponen difíciles. Ustedes son una parte fundamental de mi vida y una de mis mayores motivaciones para cumplir mis sueños. Todo lo que hacen por mí lo llevo en mi corazón, y espero algún día poder devolverles un poquito de todo lo que me han dado. Los amo mucho y me siento muy afortunada de tenerlos en mi vida.</li>
+            <li><strong>Recuerdo favorito:</strong> Mi recuerdo favorito de décimo fue compartir risas, locuras y momentos inolvidables con mis compañeros, creando recuerdos que siempre llevaré en mi corazón.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-09">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-9.jpg" alt="Foto de Escobar Ramirez Kewin Daniel">
+          <img class="estudiante-firma" src="img/firma-9.png" alt="Firma digital de Escobar Ramirez Kewin Daniel">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Escobar Ramirez Kewin Daniel</h1>
+          <p class="estudiante-frase">“Ole no”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Ser profesional en multimedia</li>
+            <li>Debutar como jugador</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Le agradezco a mi familia por apoyarme</li>
+            <li><strong>Recuerdo favorito:</strong> El día que jugué un torneo departamental</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-10">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-10.jpg" alt="Foto de Fuentes Aranda Laura Valentina">
+          <img class="estudiante-firma" src="img/firma-10.png" alt="Firma digital de Fuentes Aranda Laura Valentina">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Fuentes Aranda Laura Valentina</h1>
+          <p class="estudiante-frase">“Estoy siendo víctima de Xenofobia por parte de mi compañero Benítez”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Ser programadora y tener una vida tranquila y digna.</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco a cada uno de mis compañeros por haber formado parte de los recuerdos más bonitos de mi último año escolar. Me llevo conmigo las risas, las enseñanzas, los momentos compartidos y la tristeza de saber que una etapa tan especial está llegando a su fin.<br><br>A Yuvettslit Yunda, por ser mi primera amiga al llegar a la institución, por permitirme verla crecer y por ocupar un lugar en mi corazón que el tiempo nunca podrá borrar. A Julieta Rocha, por ser mi compañía, cómplice, apoyo incondicional y una de las amistades más valiosas de este camino. A Isabella Monje, por tenderme la mano cuando más lo necesité; a Laura Serrato, por los momentos vividos; a Estiven Benítez, por su liderazgo, amistad y por hacerme bullying de vez en cuando; a Laura Marinez, por tantas risas y su apoyo; a Cristian Muñoz, por su compañía; a Heilyn Sánchez y Saory Montaña, por estar presentes cuando pudieron; a Laura Galindo, por su cariño y confianza; y a Johan Ramírez, por su carisma y honestidad. Gracias a todos por dejar un pedacito de ustedes en esta historia que siempre recordaré con cariño.<br><br>A mis profesores, especialmente al profe Sebastián Masmelas, gracias por despertar en mí el amor por la programación.<br><br>A mi padre, Leonardo Fuentes, por su apoyo económico durante mi formación; a mis hermanos mayores, Cristian Galindo y Yonatan Galindo, por tenderme la mano cuando lo necesité; y a Esther Hernández, por acompañarme espiritual y emocionalmente en este proceso.<br><br>Pero, sobre todo, mi agradecimiento más profundo es para mi mamá, Lina Aranda. Gracias por cada sacrificio, por cada esfuerzo silencioso y por luchar incansablemente para darme un futuro mejor. Gracias por salvarme de la ignorancia, por creer en mí incluso en medio de las dificultades y por dejarlo todo con tal de verme llegar lejos. Si hoy puedo soñar con un futuro lleno de oportunidades, es porque tú has construido el camino con tus propias manos.</li>
+            <li><strong>Recuerdo favorito:</strong> Todos los días a partir de 9no (2024) han sido como el mejor de todos. Pero los mejores como Prom fueron las horas lúdicas a la última hora de todos los miércoles.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-11">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-11.jpg" alt="Foto de Galindo Diaz Laura Valentina">
+          <img class="estudiante-firma" src="img/firma-11.png" alt="Firma digital de Galindo Diaz Laura Valentina">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Galindo Diaz Laura Valentina</h1>
+          <p class="estudiante-frase">“Tengo Sueño”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Poder especializarme en lo que más aspiro.</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Le agradezco a mis padres por darme motivación y fuerzas para lograr mis metas y poder seguir adelante.</li>
+            <li><strong>Recuerdo favorito:</strong> Mi recuerdo favorito es cuando conocí por primera vez a mi mejor amiga Valeria</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-12">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-12.jpg" alt="Foto de Garcia Perez Mariana">
+          <img class="estudiante-firma" src="img/firma-12.png" alt="Firma digital de Garcia Perez Mariana">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Garcia Perez Mariana</h1>
+          <p class="estudiante-frase">“Falsos”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Psicología o licenciatura en lengua castellana</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco principalmente a Dios y a mis padres, sobre todo a mi hermana Nubia quien ha hecho el papel principal en apoyarme tanto académica como financieramente, los amo.</li>
+            <li><strong>Recuerdo favorito:</strong> La vez que hicieron caer a Edwin y de paso a Natalia en el puente de guaunda y quedó cochino</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-13">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-13.jpg" alt="Foto de Gutierrez Diz Jesus Fernando">
+          <img class="estudiante-firma" src="img/firma-13.png" alt="Firma digital de Gutierrez Diz Jesus Fernando">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Gutierrez Diz Jesus Fernando</h1>
+          <p class="estudiante-frase">“Los errores ocurren”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Convertirme en un Médico</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Gracias a mis padres, hermano y profesores que me apoyaron en todo para poder salir adelante.</li>
+            <li><strong>Recuerdo favorito:</strong> Cuando obtuve las 80 horas sociales sin hacer prácticamente nada.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-14">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-14.jpg" alt="Foto de Marinez Olaya Laura Angeline">
+          <img class="estudiante-firma" src="img/firma-14.png" alt="Firma digital de Marinez Olaya Laura Angeline">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Marinez Olaya Laura Angeline</h1>
+          <p class="estudiante-frase">“No joda”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Estudiar derecho</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco a mi familia</li>
+            <li><strong>Recuerdo favorito:</strong> Con mis padres de pequeña</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-15">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-15.jpg" alt="Foto de Medina Garcia Francy Fidelina">
+          <img class="estudiante-firma" src="img/firma-15.png" alt="Firma digital de Medina Garcia Francy Fidelina">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Medina Garcia Francy Fidelina</h1>
+          <p class="estudiante-frase">“Todo es mental”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Graduarme</li>
+            <li>Ingresar a la universidad</li>
+            <li>Estudiar Medicina</li>
+            <li>Crecer como persona</li>
+            <li>Ayudar a mi familia</li>
+            <li>Conocer nuevos lugares</li>
+            <li>Cumplir cada uno de mis sueños</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco a mi familia, docentes y compañeros por su apoyo, dedicación y enseñanzas durante esta etapa, que han contribuido a mi formación personal y académica.</li>
+            <li><strong>Recuerdo favorito:</strong> Mi recuerdo favorito en general es cuando compartimos</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-16">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-16.jpg" alt="Foto de Monje Vega Isabella">
+          <img class="estudiante-firma" src="img/firma-16.png" alt="Firma digital de Monje Vega Isabella">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Monje Vega Isabella</h1>
+          <p class="estudiante-frase">“Te cuento un chiste amiga”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Tener mi propia empresa</li>
+            <li>Llegar a componer mis propias canciones</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Le agradezco a mi mamá, tío y abuela por nunca dejarme sola y confiar en mí incluso cuando yo no lo podía hacer</li>
+            <li><strong>Recuerdo favorito:</strong> Cuando estaba en el puente con mis amigos y nos inventamos un caso para un juicio</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-17">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-17.jpg" alt="Foto de Montaña Piñeros Saory Valentina">
+          <img class="estudiante-firma" src="img/firma-17.png" alt="Firma digital de Montaña Piñeros Saory Valentina">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Montaña Piñeros Saory Valentina</h1>
+          <p class="estudiante-frase">“Tengo hambre”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Salir del colegio y formar una carrera</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradecimiento a todos los que me acompañaron en mi formación académica</li>
+            <li><strong>Recuerdo favorito:</strong> Cuando me la pasaba jugando voleibol</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-18">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-18.jpg" alt="Foto de Mora Esquivel Julieth Valentina">
+          <img class="estudiante-firma" src="img/firma-18.png" alt="Firma digital de Mora Esquivel Julieth Valentina">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Mora Esquivel Julieth Valentina</h1>
+          <p class="estudiante-frase">“Somos la resistencia”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Estudiar lo que me gusta y terminarlo</li>
+            <li>Trabajar en eso y formar una hermosa familia</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco primeramente a Dios por haberme permitido estar donde estoy y con vida, y a mis padres por apoyarme en cada momento de mi vida y supliendo cada necesidad que tengo</li>
+            <li><strong>Recuerdo favorito:</strong> En 7mo cuando jugábamos fútbol la mayoría del salón unidos</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-19">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-19.jpg" alt="Foto de Muñoz Quintero Cristian Rene">
+          <img class="estudiante-firma" src="img/firma-19.png" alt="Firma digital de Muñoz Quintero Cristian Rene">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Muñoz Quintero Cristian Rene</h1>
+          <p class="estudiante-frase">“Amo a angeline”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Hacer un tecnólogo en el SENA</li>
+            <li>Ir a la UNI y estudiar lo que me gusta para ganar mucha plata</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Cc</li>
+            <li><strong>Recuerdo favorito:</strong> Cuando fui novio de angeline</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-20">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-20.jpg" alt="Foto de Ortiz Narvaez Alex Felipe">
+          <img class="estudiante-firma" src="img/firma-20.png" alt="Firma digital de Ortiz Narvaez Alex Felipe">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Ortiz Narvaez Alex Felipe</h1>
+          <p class="estudiante-frase">“No mienta”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Estudiar mi carrera de mis sueños y ser un gran profesional</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Primero que todo, quiero dar gracias a Dios por haberme permitido vivir esta experiencia escolar con salud y vida. También agradecer a los profesores que se esforzaron por enseñarnos con dedicación, paciencia y esfuerzo todos sus conocimientos y valores que nos puedan servir en nuestra vida cotidiana. Por último, estaré infinitamente agradecido con mis padres por haberme acompañado y apoyado en todos mis proyectos y en mi trayectoria como estudiante a través del tiempo.</li>
+            <li><strong>Recuerdo favorito:</strong> Cuando jugaba micro con mis compañeros</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-21">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-21.jpg" alt="Foto de Ortiz Sarmiento Duvan Felipe">
+          <img class="estudiante-firma" src="img/firma-21.png" alt="Firma digital de Ortiz Sarmiento Duvan Felipe">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Ortiz Sarmiento Duvan Felipe</h1>
+          <p class="estudiante-frase">“Yo si estudié pero se me olvidó todo”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Mis aspiraciones son terminar mis estudios, graduarme del colegio, estudiar lo que me gusta y convertirme en un gran profesional. Sueño con tener un buen trabajo, una casa propia, ayudar económicamente a mi familia, hacer sentir orgullosos a mi mamá y hermano, viajar y conocer nuevos lugares. Aspiro a ser una persona responsable, humilde y respetuosa, cumplir cada uno de mis sueños y construir un futuro lleno de felicidad, éxitos y bendiciones, siempre con la ayuda de Dios.</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Gracias, Dios, por permitirme vivir esta hermosa etapa de mi vida, por darme la oportunidad de aprender, por cada compañero que puso una sonrisa en mis días y por cada maestro que me enseñó algo más que una lección. Gracias por los momentos felices, por las dificultades que me hicieron más fuerte y por los recuerdos que siempre llevaré en mi corazón. Hoy entiendo que el colegio no solo me dejó conocimientos, sino también amistades, experiencias y enseñanzas que me acompañarán toda la vida.</li>
+            <li><strong>Recuerdo favorito:</strong> Cuando jugué fútbol con mis compañeros y nos golearon pero no faltaron las risas</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-22">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-22.jpg" alt="Foto de Ramirez Garcia Joan Sebastian">
+          <img class="estudiante-firma" src="img/firma-22.png" alt="Firma digital de Ramirez Garcia Joan Sebastian">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Ramirez Garcia Joan Sebastian</h1>
+          <p class="estudiante-frase">“Sapa”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Ser un gran empresario</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Ccc</li>
+            <li><strong>Recuerdo favorito:</strong> C</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-23">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-23.jpg" alt="Foto de Rocha Losada Julieta">
+          <img class="estudiante-firma" src="img/firma-23.png" alt="Firma digital de Rocha Losada Julieta">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Rocha Losada Julieta</h1>
+          <p class="estudiante-frase">“Todo pasa por algo, los planes de Dios son perfectos”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Quiero cumplir mis dos sueños que es llegar a ser profesora de pedagogía infantil para mostrar ese amor tan grande que tengo con los niños y enseñarles las bases que les van a servir para el resto de su vida, y también después de cumplir eso estudiar para ser azafata, es uno de mis mayores sueños</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> A mis papás que han estado desde el momento en que nací y me han apoyado en todo</li>
+            <li><strong>Recuerdo favorito:</strong> Cuando me caí en un río con mis amigos y aprovechamos y nos bañamos.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-24">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-24.jpg" alt="Foto de Sanchez Dussan Heilyn Yireth">
+          <img class="estudiante-firma" src="img/firma-24.png" alt="Firma digital de Sanchez Dussan Heilyn Yireth">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Sanchez Dussan Heilyn Yireth</h1>
+          <p class="estudiante-frase">“Ya quisiera yo”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Llegar a ser una persona exitosa que no necesita ayuda de los demás</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco a mi familia, amigos, compañeros y profesores por darme enseñanzas, ejemplos y aprendizaje que me ayudaron a formarme como la persona que soy ahora.</li>
+            <li><strong>Recuerdo favorito:</strong> El compartir de la salchipapa</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-25">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-25.jpg" alt="Foto de Sanchez Rocha Thaliana Sofia">
+          <img class="estudiante-firma" src="img/firma-25.png" alt="Firma digital de Sanchez Rocha Thaliana Sofia">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Sanchez Rocha Thaliana Sofia</h1>
+          <p class="estudiante-frase">“Vive la vida”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Ser feliz</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco a mdzs, a mis padres, a mis profesores y a los compañeros para ayudarme a lograr mis metas</li>
+            <li><strong>Recuerdo favorito:</strong> El 2022 con mis amigas</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-26">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-26.jpg" alt="Foto de Serrato Acosta Hillary Natalia">
+          <img class="estudiante-firma" src="img/firma-26.png" alt="Firma digital de Serrato Acosta Hillary Natalia">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Serrato Acosta Hillary Natalia</h1>
+          <p class="estudiante-frase">“No todo es para siempre, pero tú sí vas a poder con todo.”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Quiero terminar mi bachillerato con la ayuda de Dios, graduarme y estudiar para ser una gran licenciada en educación infantil</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Quiero terminar mi bachillerato con la ayuda de Dios, graduarme y estudiar para ser una gran licenciada en educación infantil</li>
+            <li><strong>Recuerdo favorito:</strong> Una vez que estaba caminando con mis amigos por el patio del colegio y después nos fuimos para un lado el cual había un río; esa vez me lanzaron al río con otro compañero. Yo no quería culpar ni avisar a la responsable pero ya la habían delatado en coordinación, nos llevaron para allá, le pusieron observación y nos regañaron.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-27">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-27.jpg" alt="Foto de Serrato Trujillo Laura Sofia">
+          <img class="estudiante-firma" src="img/firma-27.png" alt="Firma digital de Serrato Trujillo Laura Sofia">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Serrato Trujillo Laura Sofia</h1>
+          <p class="estudiante-frase">“Uy no atrás satanás”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Quiero graduarme feliz junto a mis amigos</li>
+            <li>Terminar el tecnólogo</li>
+            <li>Homologar y estudiar diseño</li>
+            <li>Estudiar más cursos en el SENA</li>
+            <li>Entrar en la universidad y estudiar biología</li>
+            <li>Graduarme de la universidad</li>
+            <li>Ser profesional con lo estudiado</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Gracias a mis amigos: Laura Fuentes, Ancizar Triana, Joan Ramírez, Isabella Monje, Yuvettslit Yunda… y a todo el salón por ser tan especial para mí y por ser tan unidos a pesar de nuestras diferencias</li>
+            <li><strong>Recuerdo favorito:</strong> Mi recuerdo favorito es cuando todos fuimos a la casa del man que me gustaba y ellos se pusieron a hacer serenata la canción de la ventana marroncita</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-28">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-28.jpg" alt="Foto de Soto Calderon Nicolas">
+          <img class="estudiante-firma" src="img/firma-28.png" alt="Firma digital de Soto Calderon Nicolas">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Soto Calderon Nicolas</h1>
+          <p class="estudiante-frase">“Yo que me saqué un 3 me conformo”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Tener un trabajo estable</li>
+            <li>Tener un título profesional de ingeniero y estar junto a mis padres</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Primero que todo darle el agradecimiento a mis padres que son los que me han apoyado siempre y en cualquier circunstancia, también a mis abuelas que es otro mérito de orgullo saber que tengo una familia unida y que me apoya en todo y gracias a eso he podido con todo y siempre salir adelante afrontando todo</li>
+            <li><strong>Recuerdo favorito:</strong> Cuando jugamos un partido con mis amigos y nos golearon</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-29">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-29.jpg" alt="Foto de Triana Murcia Ancizar Steven">
+          <img class="estudiante-firma" src="img/firma-29.png" alt="Firma digital de Triana Murcia Ancizar Steven">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Triana Murcia Ancizar Steven</h1>
+          <p class="estudiante-frase">“Six seven”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Terminar el tecnólogo</li>
+            <li>Irme del país junto a mi familia</li>
+            <li>Hacer la Universidad</li>
+            <li>Tener hijos</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> Agradezco a mis padres por el gran amor que me han dado, a mis hermanos, al profe Sebas por ser tan buen docente y a mis amigos por hacer los días tan divertidos y más fáciles</li>
+            <li><strong>Recuerdo favorito:</strong> El día del compartir en 10°</li>
+          </ul>
+        </div>
+      </article>
+      <article class="estudiante-pagina oculto" id="estudiante-30">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/estudiante-30.jpg" alt="Foto de Yunda Cortes Yuvettslit">
+          <img class="estudiante-firma" src="img/firma-30.png" alt="Firma digital de Yunda Cortes Yuvettslit">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Yunda Cortes Yuvettslit</h1>
+          <p class="estudiante-frase">“Life goes on”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Ayudar a mi mamá</li>
+            <li>Llegar a ser profesional en marketing</li>
+            <li>Viajar</li>
+            <li>Tener un trabajo estable</li>
+            <li>Obtener dinero</li>
+            <li>Especializarme en algo</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> A mi mamá y a mi hermano, por acompañarme durante todo este proceso, por su esfuerzo para conseguir lo que yo necesitaba y, sobre todo, por demostrarme su apoyo, amor y orgullo</li>
+            <li><strong>Recuerdo favorito:</strong> Mi mamá y yo en la graduación de 9no, por como se veía y sentí su orgullo</li>
+          </ul>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ============================================================
+         SECCIÓN: DOCENTES (otra sección, mismo molde)
+         ============================================================ -->
+    <section class="seccion" id="docentes">
+      <h2 class="seccion-titulo">Nuestros docentes</h2>
+
+      <article class="estudiante-pagina oculto">
+        <div class="estudiante-lateral">
+          <img class="estudiante-foto" src="img/docente-1.jpg" alt="Foto de Johan Sebastian Masmelas Vega">
+          <img class="estudiante-firma" src="img/firma-docente-1.png" alt="Firma digital de Johan Sebastian Masmelas Vega">
+        </div>
+        <div class="estudiante-info">
+          <h1 class="estudiante-nombre">Johan Sebastian Masmelas Vega</h1>
+          <p class="estudiante-frase">“La constancia concede la victoria”</p>
+          <h3>Mis aspiraciones</h3>
+          <ul class="estudiante-lista">
+            <li>Doctorado en Educación</li>
+            <li>Tener Salud</li>
+            <li>Ser feliz</li>
+          </ul>
+          <h3>Mis gustos</h3>
+          <ul class="estudiante-lista">
+            <li><strong>Agradecimientos:</strong> A mi familia quiero agradecerles por ser mi mayor refugio y mi equipo incondicional.</li>
+            <li><strong>Recuerdo favorito:</strong> Cuando me gradué de Ingeniero</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- PASAR PÁGINAS (lo controla script.js) -->
+    <nav class="paginador" aria-label="Pasar páginas">
+      <button type="button" id="btn-anterior">Anterior</button>
+      <span id="indicador" aria-live="polite">Página 1</span>
+      <button type="button" id="btn-siguiente">Siguiente</button>
+    </nav>
+
+    <!-- PIE DEL LIBRO -->
+    <footer class="pie">
+      <p>Anuario 2026 · I.E. Eugenio Ferro Falla · Ciencia y Virtud</p>
+      <p>Generación 2026 · PROM 1101</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
